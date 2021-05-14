@@ -7,7 +7,7 @@ images: [general1.jpg]
     background: theme => theme.colors['backgroundGeneral'] || theme.colors['background']
   }}
 >
-<ScrollAnimation animateIn="fadeInRight" >
+<ScrollAnimation animateIn="fadeInRight" animateOnce>
 
   <Div
     sx={{
@@ -24,7 +24,7 @@ images: [general1.jpg]
     >
       <h3>General Section</h3>
       <p> Example of generic section with IMG </p>
-      <p> Example of Button theme with specific themes <ButtonTheme themes={['bulma', 'deep']} > Toggle </ButtonTheme> </p>
+      <p> Example of Button theme with specific themes <ButtonTheme themes={['bulma', 'deep', 'purple', 'dark', 'light']} > Toggle </ButtonTheme> </p>
      
     </Div>
     <Div
@@ -41,6 +41,7 @@ images: [general1.jpg]
           maxWidth: '300px',
           borderRadius: '20px',
           height: 'auto',
+          marginBottom: "30px",
           boxShadow: theme => theme.colors.imgShadow
         }}
       />

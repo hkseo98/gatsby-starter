@@ -3,7 +3,6 @@ imagesFluid: [image2.png, image1.jpg]
 ---
 
 <BgImage
-  Tag="div"
   sx={{
     mt: 5,
     height: '86vh',
@@ -14,17 +13,17 @@ imagesFluid: [image2.png, image1.jpg]
   fluid={props.imagesFluid['image1.jpg']}
   backgroundColor={props.context.theme.colors.backgroundHeader}
 >
-  <Div sx={{p: 4}} >
-    <h1 >Title Header</h1>
+  <Div sx={{ p: 5 }}>
+    <h1>WIT</h1>
   </Div>
-  
+
   <ImgGatsby
     fluid={props.imagesFluid['image2.png']}
     sx={{
-      position: 'absolute !important',
+      position: 'absolute !important', // !important = 무조건 적용됨.
       bottom: '0px',
       width: '100%',
-      height: '86vh'
+      height: '96vh'
     }}
   />
 </BgImage>
